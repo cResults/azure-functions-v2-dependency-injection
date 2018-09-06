@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>DependencyInjector.AzureFunction</AssemblyName>
+    <RootNamespace>DependencyInjector.AzureFunction</RootNamespace>
+    <Version>1.0.0</Version>
+    <PackageId>DependencyInjector.AzureFunction</PackageId>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Description>Tools to enable Dependency Injection of use cases in Azure Functions</Description>
+    <PackageReleaseNotes>Currently based upon:
+Microsoft.Azure.WebJobs (3.0.0-beta8)
+
+Compatible with:
+Microsoft.NET.SdkFunctions (1.0.19)</PackageReleaseNotes>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.WebJobs" Version="3.0.0-beta8" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.1.1" />    
+  </ItemGroup>
+</Project>
